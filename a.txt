@@ -1,0 +1,32 @@
+mkdir backend
+cd backend
+npm init -y
+
+npm install express mongoose cors @types/express @types/mongoose @types/cors --save
+
+vim backend.sh
+
+chmod 755 backend.sh
+
+./backend.sh
+
+//------------------------
+
+npx create-react-app frontend --template typescript
+cd frontend
+npm install axios @types/axios chart.js react-chartjs-2 socket.io-client @types/socket.io-client --save
+vim frontend.sh
+chmod 755 frontend.sh
+
+-------------------------------
+
+cd ../
+
+npm run start
+
+-----------------------------
+
+npm start
+
+-----------------------------
+

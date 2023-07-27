@@ -1,0 +1,26 @@
+yum install wget
+
+wget https://nodejs.org/dist/v18.17.0/node-v18.17.0-linux-x64.tar.xz
+
+wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1804-6.0.8.tgz
+
+tar -xvzf node-v18.17.0-linux-x64.tar.xz
+
+tar -xvzf mongodb-linux-x86_64-ubuntu1804-6.0.8.tgz
+
+//------------------------------------------------
+
+mongod
+create databases 'webserver'
+use webserver
+db.createUser({
+  user: "neha",
+  pwd: "qwerty",
+  roles: [{ role: "readWrite", db: "webserver" }]
+})
+
+
+
+
+
+
